@@ -31,8 +31,9 @@ computer, as if it was typed on a USB keyboard.
 
 This project enables USB-C Gadget mode on the Raspberry Pi 4:
 
-  - A custom `fwup.conf` file adds `dwc2` support (look for lines containing
-    `dwc2`) and loads a custom `config.txt`.
+  - A custom `fwup.conf` file (indicated in the config file `config/rpi4.exs`)
+    adds `dwc2` support (look for lines containing `dwc2`) and loads a custom
+    `config.txt`.
   - The custom `config.txt` enables USB gadget mode with `dwc2`.
   - A custom `erlinint.config` loads a custom script upon start. The script in
     turns creates the HID Gadget using ConfigFS.
